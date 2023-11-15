@@ -1,0 +1,88 @@
+/* === Main === */
+
+.hero {
+  padding: 92px 0;
+  text-align: center;
+}
+
+.hero__info-content_title {
+  font-size: 48px;
+  font-weight: bolder;
+  background: linear-gradient(to bottom, #fffbeb, #a855f7);
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+.hero__info-content_subtitle {
+  font-size: 18px;
+  line-height: 1.47;
+  letter-spacing: 1.1px;
+  color: var(--primary-color);
+  margin-top: 24px;
+  max-width: 830px;
+  text-align: center;
+  margin: auto;
+}
+
+.divisor {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.divisor__element {
+  width: 100%;
+  height: 1px;
+  background-color: #9ca3af6c;
+  position: absolute;
+  z-index: -1;
+}
+.divisor__title {
+  color: var(--secondary-color);
+  border-radius: 8px;
+  padding: 4px 12px;
+  border: 1px solid #9ca3af6c;
+  background: #0f172a;
+}
+
+/* === Questions Card === */
+
+.card {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+  text-decoration: none;
+  background-color: #0f172a;
+  color: var(--secondary-color);
+}
+.card:hover {
+  border: 1px solid var(--secondary-color);
+}
+.card svg {
+  position: absolute;
+  right: 6px;
+  top: 6px;
+}
+/* .card svg:hover path{
+  fill: var(--secondary-color);
+  stroke: var(--primary-color);
+} */
+
+/* === Main Cards Content === */
+
+.main-content__wrapper {
+  padding: 56px 0;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+}
+
+@media screen and (max-width:550px) {
+  .hero__info-content_title {
+    font-size: 36px;
+  }
+}
